@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/jarvis/IdeaProjects/iDurarCRM/src/test/java/iDurarERP">
+        <parameter name="baseURL" value="https://cloud.idurarapp.com/"/>
+        <parameter name="email" value="taedyn.tai@milkgitter.com"/>
+        <parameter name="password" value="123456"/>
+        <classes>
+<!--            <class name="iDurarERP.Companies">-->
+<!--                <methods>-->
+<!--                    <include name="navigateToPage"/>-->
+<!--                    <include name="addNewCompany"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="iDurarERP.newInvoice">
+                <methods>
+                    <include name="navigateToPage"/>
+                    <include name="addInvoiceDetails"/>
+                    <include name="addInvoiceItems"/>
+                </methods>
+            </class>
+<!--            <class name="iDurarERP.newProduct">-->
+<!--                <methods>-->
+<!--                    <include name="navigateToPage"/>-->
+<!--                    <include name="addProduct"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="iDurarERP.newProductCategory">-->
+<!--                <methods>-->
+<!--                    <include name="navigateToPage"/>-->
+<!--                    <include name="makeCategory"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
